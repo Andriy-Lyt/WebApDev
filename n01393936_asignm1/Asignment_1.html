@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Incident Report</title>
+    <style>
+        body {  width: 80%; margin: 10px auto; }
+        img { height: 125px; }
+        label, option, input { font-size: 1.1em; }
+        .margin-top15 { margin-top: 15px; }
+        .margin-top10 { margin-top: 10px; }
+        .margin-left5 { margin-left: 5px; }
+        #submit { border-radius:7px; background-color: purple; color: white;}
+    </style>
+</head>
+<body>
+    <img src="2cats-crop.jpg" alt="cats image" />
+    <h1> "Happy Cat - Happy Owner" Salon </h1>
+    <form method="GET" action="https://postman-echo.com/get">
+        <section>
+            <h2>Grooming Incident Report Form</h2>
+            <label>Enter your Name:</label>
+            <input type="text" id="bachelor_firstname" name="bachelor_firstname" />
+            <label class="margin-left5">Enter your pet Name:</label>
+            <input type="text" id="bachelor_firstname" name="bachelor_firstname" />
+        </section>
+        <section class="margin-top15">
+            <h3>Please describe current emotional state of your pet</h3>
+            <div class="margin-top10">
+                <input type="radio" id="emotional_state_1" name="emotional_state" value="happy" /><label class="margin-left5" for="color_option_1">Happy</label>
+            </div>
+            <div>
+                <input type="radio" id="emotional_state_2" name="emotional_state" value="melancholic" /><label class="margin-left5" for="color_option_2">Melancholic</label>
+            </div>
+            <div>
+                <input type="radio" id="emotional_state_3" name="emotional_state" value="depressed" /><label class="margin-left5" for="color_option_3">Depressed</label>
+            </div>
+        </section>
+        <section>
+            <h3>How can we compensate you?</h3>
+            <select id="compensation" name="compensation">
+                <option value="none" checked>-Select-</option>
+                <option value="spa">Free spa treatment</option>
+                <option value="dinner">Free dinner</option>
+                <option value="excursion">Free excursion</option>
+            </select>
+        </section>
+        <section>
+            <h3>How can we contact you?</h3>
+            <div><input type="checkbox" value="phone" id="contact" name="contact_1" /><label class="margin-left5" for=contact_1">Phone</label></div>
+            <div><input type="checkbox" value="text" id="contact_2" name="contact_2" /><label class="margin-left5" for="contact_2">Text</label></div>
+            <div><input type="checkbox" value="email" id="contact_3" name="contact_3" /><label class="margin-left5" for="contact_3">E-mail</label></div>
+        </section>
+        <section class="margin-top10">
+            <input id="submit" type="submit" value="submit" />
+        </section>
+     </form>
+
+</body>
+</html>
